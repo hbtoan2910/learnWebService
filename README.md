@@ -84,3 +84,124 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/1ebe70f3-5969-4962-bc95-893e27869b57)
 
 
+## EXTRA: run each project with Tomcat9 but with DIFFERNT ports
+
+1. Right click on each project > Export > WAR file (After that, we got: AppConsumeWS.war & project_01.war)
+
+2. Create new folder: Tomcat9-Instance1
+
+3. Copy [ conf, webapps and temp folders ] from C:\apache-tomcat-9.0.86 and paste them to C:\Tomcat9-Instance1
+   
+   You can delete contents from webapps and temp folders located under instance1, but don't touch conf contents
+   
+4. Copy > paste C:\Tomcat9-Instance1 and rename it to Tomcat9-Instance2. That way, both Tomcat9-Instance1 and Tomcat9-Instance2 will have the same content.
+
+5. Go to C:\Tomcat9-Instance2\conf, edit server.xml and change the numbers of these ports (I marked those as XXXX):
+
+   <Server port="XXXX" shutdown="SHUTDOWN">
+
+   <Connector port="XXXX" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" />
+
+   <Connector port="XXXX" protocol="AJP/1.3" redirectPort="8443" />
+
+   Example:
+
+   #### C:\Tomcat9-Instance1\conf\server.xml:
+   
+   <Server port="8005" shutdown="SHUTDOWN">
+   
+    <Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443"
+               maxParameterCount="1000"
+               />
+
+    <Connector protocol="AJP/1.3"
+               address="::1"
+               port="8009"
+               redirectPort="8443"
+               maxParameterCount="1000"
+               />
+   
+   #### C:\Tomcat9-Instance2\conf\server.xml:
+
+   <Server port="7005" shutdown="SHUTDOWN">
+
+   <Connector port="7001" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443"
+               maxParameterCount="1000"
+               />
+
+   <Connector protocol="AJP/1.3"
+               address="::1"
+               port="7009"
+               redirectPort="8443"
+               maxParameterCount="1000"
+               />
+   
+   
+7. Deploy project_01.war to Tomcat9-Instance1\webapps and AppConsumeWS.war to Tomcat9-Instance2\webapps
+
+8. Create the following 4 batch files:
+
+   File: instance1_startup.bat (create a txt file and paste the content)
+   
+   @echo off
+   
+   set CATALINA_BASE=C:\Tomcat9-Instance1
+   
+   cd "%CATALINA_HOME%\bin"
+   
+   set TITLE=My Tomcat Instance 01
+   
+   call startup.bat %TITLE%
+   
+
+   File: instance1_shutdown.bat
+   
+   @echo off
+   
+   set CATALINA_BASE=C:\Tomcat9-Instance1
+   
+   cd "%CATALINA_HOME%\bin"
+   
+   call shutdown.bat
+   
+
+   File: instance2_startup.bat
+   
+   @echo off
+   
+   set CATALINA_BASE=C:\Tomcat9-Instance2
+   
+   cd "%CATALINA_HOME%\bin"
+   
+   set TITLE=My Tomcat Instance 02
+   
+   call startup.bat %TITLE%
+
+
+   File: instance2_shutdown.bat
+   
+   @echo off
+   
+   set CATALINA_BASE=C:\Tomcat9-Instance2
+   
+   cd "%CATALINA_HOME%\bin"
+   
+   call shutdown.bat
+
+9. Run instance1_startup.bat and instance2_startup.bat, it should work :")
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/f580db94-b968-4615-8ad2-dc968ccc8e04)
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/9f5ee5da-c9ca-4740-8507-06c34f3057cd)
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/b1fd149b-6180-49dc-b3a7-01a08f8fa2ea)
+
+
+## Reference links:
+
+https://stackoverflow.com/questions/16110528/tomcat-multiple-instances-simultaneously/21945707#21945707
+
