@@ -36,11 +36,13 @@ AppConsumeWS structure:
 
 2. Import this plugin: cxf-codegen-plugin (add to pom.xml) to generate java files from wsdl file (wsdl2java)
    Note:
+   
    packagename is the package where these wsdl files will be extracted into. As default, this package will be auto generated inside: /AppConsumeWS/target/generated-sources/cxf/
    
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/378b3efd-ffde-412f-a56f-4563038b63c2)
 
 3. ConsumeWebServiceServlet.java -> to consume web service and display result on webpage
+
 
 ## TESTING:
 
