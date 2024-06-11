@@ -31,3 +31,28 @@ This is used to consume web service
 AppConsumeWS structure:
 
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/5f0e52ec-0d52-476a-abaf-fb619d2d4a87)
+
+1. Copy and paste wsdl file into src/main/resourses
+
+2. Import this plugin: cxf-codegen-plugin (add to pom.xml) to generate java files from wsdl file (wsdl2java)
+   Note:
+   packagename is the package where these wsdl files will be extracted into. As default, this package will be auto generated inside: /AppConsumeWS/target/generated-sources/cxf/
+   
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/378b3efd-ffde-412f-a56f-4563038b63c2)
+
+3. ConsumeWebServiceServlet.java -> to consume web service and display result on webpage
+
+## TESTING:
+
+Run on server AppConsumeWS -> When you add multiple projects to Tomcat and run the server, all the deployed projects will be active and running simultaneously. As default, running on same port (8080).
+And each project will be accessible via its corresponding URL context path. This allows you to deploy and manage multiple web applications within the same Tomcat server instance
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/f8634bd9-577d-40cb-9811-4ce69dc2be59)
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/6ce06543-fec0-4b51-aad3-6829267d91e5)
+
+After clicking Get Customers btn, data will be retrieved from SQL server db [via the imported web service (wsdl files)] and display on webpage properly.
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/1ebe70f3-5969-4962-bc95-893e27869b57)
+
+
