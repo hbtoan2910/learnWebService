@@ -84,7 +84,7 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/1ebe70f3-5969-4962-bc95-893e27869b57)
 
 
-## EXTRA: run each project with Tomcat9 but with DIFFERNT ports
+## EXTRA: run each project with Tomcat9 but with DIFFERENT ports
 
 1. Right click on each project > Export > WAR file (After that, we got: AppConsumeWS.war & project_01.war)
 
@@ -106,7 +106,7 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
 
    Example:
 
-   C:\Tomcat9-Instance1\conf\server.xml:
+   C:\Tomcat9-Instance1\conf\server.xml. In its content, focus on these 3 elements:
    
    <Server port="8005" shutdown="SHUTDOWN">
    
@@ -123,7 +123,7 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
                maxParameterCount="1000"
                />
    
-   C:\Tomcat9-Instance2\conf\server.xml:
+   C:\Tomcat9-Instance2\conf\server.xml. In its content, focus on these 3 elements:
 
    <Server port="7005" shutdown="SHUTDOWN">
 
