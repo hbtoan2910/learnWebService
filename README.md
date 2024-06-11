@@ -8,6 +8,25 @@ project_01 structure:
 
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/17b58bf6-cb66-41e5-9c81-8e94ea438273)
 
+#### SUPER IMPORTANCE:
+
+USE:
+
+Eclipse IDE for Enterprise Java and Web Developers (includes Incubating components)
+Version: 2023-03 (4.27.0) -> generate web service (wsdl file) properly WITHOUT any error using Tomcat9 + Axis (Deprecated)
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/d85d49fd-8e33-4ab5-a196-d0c9bcc5e275)
+
+DON'T USE:
+
+Other lastest versions of Eclipse including:
+
+Eclipse IDE for Java Developers (includes Incubating components)
+Version: 2024-03 (4.31.0) -> generate web service (wsdl file) properly WITH any error using Tomcat9 + Axis (Deprecated)
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/54e0b9e1-1d37-49e6-8221-6563b2f70f21)
+
+
 1. JdbcSQLServerConnection.java -> set up connect to SQL server db
    Note:
    a) In case you use property file to store key/value, file must locate in same place (same folder/package) with java file in order to use class.getResourceAsStream().
@@ -23,6 +42,7 @@ project_01 structure:
 3. Right click on CustomerAPI.java > Web Services > Create Web Service -> create a web service
  
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/5b5649b0-14a4-46de-8d91-abe69b3e65c2)
+
 
 
 ## AppConsumeWS: this is a Maven Project
@@ -42,6 +62,7 @@ AppConsumeWS structure:
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/378b3efd-ffde-412f-a56f-4563038b63c2)
 
 3. ConsumeWebServiceServlet.java -> to consume web service and display result on webpage
+
 
 
 ## TESTING:
