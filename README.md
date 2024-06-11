@@ -106,7 +106,7 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
 
    Example:
 
-   #### C:\Tomcat9-Instance1\conf\server.xml:
+   C:\Tomcat9-Instance1\conf\server.xml:
    
    <Server port="8005" shutdown="SHUTDOWN">
    
@@ -123,7 +123,7 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
                maxParameterCount="1000"
                />
    
-   #### C:\Tomcat9-Instance2\conf\server.xml:
+   C:\Tomcat9-Instance2\conf\server.xml:
 
    <Server port="7005" shutdown="SHUTDOWN">
 
