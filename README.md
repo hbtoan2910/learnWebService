@@ -2,7 +2,7 @@
 This is a demo focusing on how to generate a web service and how to consume a web service
 
 ## project_01: this is a Dynamic Web Project
-This is used to generate web service.
+### This is used to generate web service.
 
 project_01 structure:
 
@@ -26,7 +26,7 @@ project_01 structure:
 
 
 ## AppConsumeWS: this is a Maven Project
-This is used to consume web service
+### This is used to consume web service
 
 AppConsumeWS structure:
 
@@ -44,8 +44,10 @@ AppConsumeWS structure:
 
 ## TESTING:
 
-Run on server AppConsumeWS -> When you add multiple projects to Tomcat and run the server, all the deployed projects will be active and running simultaneously. As default, running on same port (8080).
-And each project will be accessible via its corresponding URL context path. This allows you to deploy and manage multiple web applications within the same Tomcat server instance
+Run on server AppConsumeWS 
+
+-> When you add multiple projects to Tomcat and run the server, all the deployed projects will be active and running simultaneously. As default, running on same port (8080).
+And each project will be accessible via its corresponding URL context path. This allows you to deploy and manage multiple web applications within the same Tomcat server instance.
 
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/f8634bd9-577d-40cb-9811-4ce69dc2be59)
 
