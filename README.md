@@ -2,7 +2,8 @@
 This is a demo focusing on how to generate a web service and how to consume a web service
 
 ## project_01: this is a Dynamic Web Project
-This is used to generate web service
+This is used to generate web service.
+
 project_01 structure:
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/17b58bf6-cb66-41e5-9c81-8e94ea438273)
 1. JdbcSQLServerConnection.java -> set up connect to SQL server db
