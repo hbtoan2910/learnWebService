@@ -99,9 +99,7 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
 5. Go to C:\Tomcat9-Instance2\conf, edit server.xml and change the numbers of these ports (I marked those as XXXX):
 
    <Server port="XXXX" shutdown="SHUTDOWN">
-
    <Connector port="XXXX" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" />
-
    <Connector port="XXXX" protocol="AJP/1.3" redirectPort="8443" />
 
    Example:
