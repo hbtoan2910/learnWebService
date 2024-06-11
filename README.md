@@ -13,6 +13,7 @@ project_01 structure:
 USE:
 
 Eclipse IDE for Enterprise Java and Web Developers (includes Incubating components)
+
 Version: 2023-03 (4.27.0) -> generate web service (wsdl file) properly WITHOUT any error using Tomcat9 + Axis (Deprecated)
 
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/d85d49fd-8e33-4ab5-a196-d0c9bcc5e275)
@@ -22,9 +23,11 @@ DON'T USE:
 Other lastest versions of Eclipse including:
 
 Eclipse IDE for Java Developers (includes Incubating components)
+
 Version: 2024-03 (4.31.0) -> generate web service (wsdl file) properly WITH any error using Tomcat9 + Axis (Deprecated)
 
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/54e0b9e1-1d37-49e6-8221-6563b2f70f21)
+
 
 
 1. JdbcSQLServerConnection.java -> set up connect to SQL server db
