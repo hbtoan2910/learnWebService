@@ -108,37 +108,37 @@ After clicking Get Customers btn, data will be retrieved from SQL server db [via
 
    C:\Tomcat9-Instance1\conf\server.xml. In its content, focus on these 3 elements:
    
-   <Server port="8005" shutdown="SHUTDOWN">
+   `<Server port="8005" shutdown="SHUTDOWN">`
    
-    <Connector port="8080" protocol="HTTP/1.1"
+    `<Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443"
                maxParameterCount="1000"
-               />
+               />`
 
-    <Connector protocol="AJP/1.3"
+    `<Connector protocol="AJP/1.3"
                address="::1"
                port="8009"
                redirectPort="8443"
                maxParameterCount="1000"
-               />
+               />`
    
    C:\Tomcat9-Instance2\conf\server.xml. In its content, focus on these 3 elements:
 
-   <Server port="7005" shutdown="SHUTDOWN">
+   `<Server port="7005" shutdown="SHUTDOWN">`
 
-   <Connector port="7001" protocol="HTTP/1.1"
+   `<Connector port="7001" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443"
                maxParameterCount="1000"
-               />
+               />`
 
-   <Connector protocol="AJP/1.3"
+   `<Connector protocol="AJP/1.3"
                address="::1"
                port="7009"
                redirectPort="8443"
                maxParameterCount="1000"
-               />
+               />`
    
    
 7. Deploy project_01.war to Tomcat9-Instance1\webapps and AppConsumeWS.war to Tomcat9-Instance2\webapps
