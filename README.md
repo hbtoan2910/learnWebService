@@ -27,5 +27,7 @@ project_01 structure:
 
 ## AppConsumeWS: this is a Maven Project
 This is used to consume web service
+
 AppConsumeWS structure:
+
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/5f0e52ec-0d52-476a-abaf-fb619d2d4a87)
