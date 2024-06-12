@@ -1,0 +1,12 @@
+# Eclipse specific files
+.project
+.classpath
+.settings/
+target/
+
+# Class files
+*.class
+
+# Temporary files
+*.tmp
+*.bak
