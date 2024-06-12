@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://project_01" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://project_01" xmlns:intf="http://project_01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://project_01" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getCustomers">
+    <complexType/>
+   </element>
+   <element name="getCustomersResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getCustomersReturn" type="impl:Customer"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="Customer">
+    <sequence>
+     <element name="companyName" nillable="true" type="xsd:string"/>
+     <element name="firstName" nillable="true" type="xsd:string"/>
+     <element name="lastName" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getCustomersRequest">
+
+      <wsdl:part element="impl:getCustomers" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCustomersResponse">
+
+      <wsdl:part element="impl:getCustomersResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="CustomerAPI">
+
+      <wsdl:operation name="getCustomers">
+
+         <wsdl:input message="impl:getCustomersRequest" name="getCustomersRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCustomersResponse" name="getCustomersResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CustomerAPISoapBinding" type="impl:CustomerAPI">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getCustomers">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCustomersRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCustomersResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CustomerAPIService">
+
+      <wsdl:port binding="impl:CustomerAPISoapBinding" name="CustomerAPI">
+
+         <wsdlsoap:address location="http://localhost:8080/project_01/services/CustomerAPI"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
