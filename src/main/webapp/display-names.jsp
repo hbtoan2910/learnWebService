@@ -8,24 +8,26 @@
 <meta charset="ISO-8859-1">
 <title>Display Customers</title>
 </head>
-<body style="background-color: pink">
+<body>
 	<h1>Retrieve customers from SQL server db and display</h1>
-	<%
-	@SuppressWarnings("unchecked")
-	List<Customer> list = (List<Customer>) request.getAttribute("customers");
-	if (list != null) {
-	%>
-	<ul>
+	<div style="background-color: pink">
 		<%
-		for (Customer cus : list) {
+		@SuppressWarnings("unchecked")
+		List<Customer> list = (List<Customer>) request.getAttribute("customers");
+		if (list != null) {
 		%>
-		<li><%=cus.getFirstName() + " " + cus.getLastName() + " is working at " + cus.getCompanyName()%></li>
+		<ul>
+			<%
+			for (Customer cus : list) {
+			%>
+			<li><%=cus.getFirstName() + " " + cus.getLastName() + " is working at " + cus.getCompanyName()%></li>
+			<%
+			}
+			%>
+		</ul>
 		<%
 		}
 		%>
-	</ul>
-	<%
-	}
-	%>
+	</div>
 </body>
 </html>
