@@ -6,6 +6,12 @@ This is a demo focusing on how to generate a web service and how to consume a we
 
 project_01 structure:
 
+First creation:
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/c3e72bec-b5c5-4103-88e7-a618f5daea66)
+
+Final:
+
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/17b58bf6-cb66-41e5-9c81-8e94ea438273)
 
 #### SUPER IMPORTANCE:
