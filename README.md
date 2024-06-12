@@ -65,6 +65,9 @@ Version: 2024-03 (4.31.0) -> generate web service (wsdl file) properly WITH any 
   Cause the JAX-RPC specification does not support certain data types, such as java.util.List, directly. Instead, it supports arrays for serializing and deserializing data
 
 3. Right click on CustomerAPI.java > Web Services > Create Web Service -> create a web service
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/7c5c56b0-543e-4eba-bdf6-02c72e04f081)
+
  
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/5b5649b0-14a4-46de-8d91-abe69b3e65c2)
 
