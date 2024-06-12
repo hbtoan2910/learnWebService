@@ -56,7 +56,7 @@ Version: 2024-03 (4.31.0) -> generate web service (wsdl file) properly WITH any 
    a) In case you use property file to store key/value, file must locate in same place (same folder/package) with java file in order to use class.getResourceAsStream().
    If it is placed in WEB-INF/config/, it returns 'null' when using use class.getResourceAsStream()
 
-   b) Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver") -> this line is mandatory
+   b) Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver") -> sometimes, we need this to avoid error.
    
    Without this line, this error shown up while testing web service "java.sql.SQLException: No suitable driver found for 
         	   jdbc:sqlserver://DESKTOP-QQE9C8H\SQLEXPRESS;database=AdventureWorksLT2012;user=sa;password=12345;encrypt=true;trustServerCertificate=true;
