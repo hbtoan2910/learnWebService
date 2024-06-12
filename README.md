@@ -10,6 +10,19 @@ First creation:
 
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/c3e72bec-b5c5-4103-88e7-a618f5daea66)
 
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/603f17c7-c726-47cd-9f17-ce442d7b591a)
+
+When creating web service from HelloWorld.java:
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/9d294513-b893-4cb4-8812-5cef78ee0416)
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/1350853d-4ae6-4bc0-abdd-2bb2da61dcfe)
+
+Test using Web Services Explorer:
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/fabe1963-42d8-4648-aa18-a9c89492acdf)
+
+
 Final:
 
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/17b58bf6-cb66-41e5-9c81-8e94ea438273)
