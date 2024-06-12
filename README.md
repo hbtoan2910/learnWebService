@@ -78,6 +78,10 @@ Version: 2024-03 (4.31.0) -> generate web service (wsdl file) properly WITH any 
 
 AppConsumeWS structure:
 
+First creation:
+
+![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/396d328a-9a3d-408e-838a-aba68d718b8b)
+
 ![image](https://github.com/hbtoan2910/learnWebService/assets/59778636/5f0e52ec-0d52-476a-abaf-fb619d2d4a87)
 
 1. Copy and paste wsdl file into src/main/resourses
