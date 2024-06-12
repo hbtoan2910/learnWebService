@@ -10,3 +10,4 @@ target/
 # Temporary files
 *.tmp
 *.bak
+/build/
