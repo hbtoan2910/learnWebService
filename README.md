@@ -1,5 +1,5 @@
 # learnWebService
-This is a demo focusing on how to generate a web service and how to consume a web service
+This is a demo focusing on how to generate a web service (using SOAP) and how to consume a web service
 
 ## project_01: this is a Dynamic Web Project
 ### This is used to generate web service.
